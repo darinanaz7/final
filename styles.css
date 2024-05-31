@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.navbar-nav {
+    /*justify-content: space-around;*/
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+#language {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+/*Main*/
+
+.main {
+    padding-top: 80px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel-info-container {
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-info-1 {
+    background-image: url('assets/main-bg.jpg');
+}
+
+.carousel-info-1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.carousel-info-description h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: #fff;
+    max-width: 100%;
+}
+
+
+.container-absolute {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-info-description {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    max-width: 60%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.carousel-info-description h2 {
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+.carousel-info-2 .carousel-info-description h1,
+.carousel-info-2 .carousel-info-description h2 {
+    color: #fff;
+}
+
+.learn-more {
+    margin-top: 60px;
+    align-self: start;
+    margin-left: 45px;
+}
+
+.carousel-info-2 {
+    background-image: url('assets/reception-bh.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages {
+    margin-top: 50px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    margin: 20px;
+}
+
+.advantage p,
+.advantage h3,
+.advantage i {
+    display: block;
+    text-align: center;
+}
+
+.advantage i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.advantage h3 {
+    font-size: 1.7rem;
+}
+
+.advantage p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.departments {
+    margin-top: 100px;
+}
+
+.departments .info,
+.about-us .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.departments .info h2,
+.about-us .info .h2 {
+    font-size: 2.5rem;
+}
+
+.all-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.all-link::after {
+    content: '>';
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.all-link:hover {
+    color: #f1c40f;
+}
+
+.departments-container {
+    margin-top: 50px;
+}
+
+.department {
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.curtain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.department-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.helper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.helper h4 {
+    font-size: 2rem;
+}
+
+.helper p {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 60px;
+    bottom: 10px;
+}
+
+.department-gynecology {
+    background-image: url('assets/gynecology.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.department-laboratory {
+    background-image: url('assets/laboratory.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.departments-brief-description {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.about-us {
+    margin-top: 100px;
+}
+
+.about-us-container {
+    margin-top: 50px;
+}
+
+.left,
+.right {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.left p {
+    margin-top: 40px;
+    line-height: 2.5;
+}
+
+.about-us-images {
+    margin-top: 20px;
+}
+
+.about-us-images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contacts {
+    margin-top: 100px;
+}
+
+.form-click {
+    border-top: 1px solid #f1c40f;
+    border-bottom: 1px solid #f1c40f;
+    padding: 30px 0;
+}
+
+.form-click p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.form-click button {
+    font-size: 1.3rem;
+    height: 50px;
+}
+
+.contacts-info {
+    margin-top: 100px;
+}
+
+.contacts-info-container {
+    margin-top: 50px;
+}
+
+.contacts-info h3 {
+    font-size: 1.5rem;
+}
+
+.contacts-info p {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.contacts-info .flex {
+    font-size: 1.1rem;
+}
+
+.contacts-info a {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: 0.1s all ease;
+}
+
+.contacts-info a:hover {
+    text-decoration: underline;
+    color: #f1c40f;
+}
+
+.social {
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    transition: 0.2s all ease;
+}
+
+.social-icon:hover {
+    color: #f1c40f;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: rgb(248,249,250);
+    color: black;
+    padding: 30px 0;
+}
+
+.footer-left,
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .logo {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: auto;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-left p {
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+
+.footer-nav {
+    gap: 12px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.helper p.active {
+    color: #f1c40f;
+    animation: arrow 1s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.nav-link.active {
+    color: #f1c40f!important;
+}
+
+.carousel-curtain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}

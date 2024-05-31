@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная | Darina Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/846bd69ccc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.jpg" alt="logo" width="50" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Басты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us-kz.html">Орталық туралы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts-kz.html">Контактілер</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Бөлімдер
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/departments/gynecology.html">Гинекологиялық бөлім</a></li>
+                            <li><a class="dropdown-item" href="/departments/microbiological_laboratory.html">Микробиологиялық зертхана</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="language">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Қазақ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/index.html">English</a></li>
+                            <li><a class="dropdown-item" href="/index-ru.html">Русский</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <section class="carousel-section">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-info-container carousel-info-1">
+                        <div class="carousel-curtain"></div>
+                        <div class="container container-absolute">
+                            <div class="carousel-info-description">
+                                <h1>Darina clinic</h1>
+                                <h2>
+                                    Қазақстан нарығында жоғары технологияларды пайдалана отырып, көпсалалы медициналық қызметтерді көрсету және халықаралық деңгейге шығудағы 20 жылдан астам тәжірибесі.
+                                </h2>
+                                <a href="#" class="btn btn-outline-light learn-more" role="button">
+                                    Жазылу
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-info-container carousel-info-2">
+                        <div class="container container-absolute">
+                            <div class="carousel-info-description">
+                                <h1>БІЗДІҢ ҚЫЗМЕТТЕРІМІЗ</h1>
+                                <h2>
+                                    Біз гинекология, зертханалық диагностика, ультрадыбыстық диагностика және т.б. қоса алғанда, медициналық қызметтердің кең спектрін ұсынамыз.
+                                </h2>
+                                <button class="btn btn-outline-light learn-more order-call" role="button" data-bs-toggle="modal" data-bs-target="#contactModal">Қоңырауға тапсырыс беру</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages">
+                <div class="row flex justify-content-between">
+                    <div class="advantage col-md-2">
+                        <div class="advantage-title">
+                            <i class="fas fa-ambulance"></i>
+                            <h3>20+ жыл</h3>
+                        </div>
+                        <p class="advantage-description">
+                            Қазақстан нарығындағы тәжірибе
+                        </p>
+                    </div>
+                    <div class="advantage col-md-2">
+                        <div class="advantage-title">
+                            <i class="fas fa-user-md"></i>
+                            <h3>240+</h3>
+                        </div>
+                        <p class="advantage-description">
+                            жоғары білікті мамандар
+                        </p>
+                    </div>
+                    <div class="advantage col-md-2">
+                        <div class="advantage-title">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>180 000+</h3>
+                        </div>
+                        <p class="advantage-description">
+                            табысты операциялар
+                        </p>
+                    </div>
+                    <div class="advantage col-md-2">
+                        <div class="advantage-title">
+                            <i class="fas fa-hospital"></i>
+                            <h3>17</h3>
+                        </div>
+                        <p class="advantage-description">
+                            клиникалық бөлімдер
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="departments">
+        <div class="container">
+            <div class="info">
+                <h2>Біздің бөлімдер</h2>
+                <a href="#" class="all-link">Барлық бөлімдер</a>
+            </div>
+            <div class="departments-container">
+                <div class="row justify-content-between">
+                    <div class="department department-gynecology col-md-5">
+                        <div class="curtain"></div>
+                        <div class="department-description">
+                            <div class="helper">
+                                <h4>Гинекологиялық бөлім</h4>
+                                <p>
+                                    <i class="fas fa-chevron-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="department department-laboratory col-md-5">
+                        <div class="curtain"></div>
+                        <div class="department-description">
+                            <div class="helper">
+                                <h4>Микробиологиялық зертхана</h4>
+                                <p>
+                                    <i class="fas fa-chevron-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row departments-brief-description">
+                    <p>
+                        Бір-бірімен тығыз байланыста және жоғары білікті мамандардан тұратын 17 бөлімшелердің күш-жігерінің арқасында біздің орталық кең ауқымда медициналық қызметтерді көрсетуде көшбасшы болып табылады. Біз өз пациенттерімізге медицинаның соңғы жетістіктеріне негізделген озық диагностика мен емдеу әдістерін ұсына алатынымызды мақтан тұтамыз. Біздің кешенді көзқарасымыз арқылы пациенттер мұқият және жеке күтімді алады. Біздің орталық медициналық қызметтердің сапасы мен қауіпсіздігінің жоғары деңгейін қамтамасыз ету үшін инновациялық технологиялар мен әдістерді енгізіп, үнемі жетілдіріп отырады.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="info">
+                <h2>Біз Туралы</h2>
+                <a href="#" class="all-link">Қосымша мәліметтер</a>
+            </div>
+
+            <div class="about-us-container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 left">
+                        <strong>
+                            "Darina Clinic" АҚ Қазақстан нарығында жоғары технологияларды қолдана отырып, көпсалалы медициналық қызметтер көрсетуде 20 жылдан астам тәжірибесі бар және халықаралық деңгейге шықты.
+                        </strong>
+                        <p>
+                            "Darina Clinic" АҚ өз қызметін ҚР Денсаулық сақтаудың басым бағыттары бойынша жоғары технологияларды қолдану және ғылымды дамыту арқылы медициналық қызметтер көрсету нарығына бағыттайды. Біз Қазақстан Республикасында аритмологиялық бейіндегі медициналық қызметтер, кардиохирургиялық, терапиялық, жасушалық технологиялар және т. б. бойынша негізгі орталық болып табыламыз.
+                        </p>
+                    </div>
+                    <div class="col-md-6 right">
+                        <p>Сонымен қатар, біздің Орталық көп бейінді дамытады, бұл пациентке қажетті қызметтерді бір жерде және қысқа мерзімде алуға мүмкіндік береді.</p>
+                        <p>Орталық медицинаның келесі салаларына маманданған:</p>
+                        <ul>
+                            <li>Ересектер мен балалар кардиохирургиясы;</li>
+                            <li>Хирургия;</li>
+                            <li>Жасушалық технологиялар;</li>
+                            <li>Аритмология;</li>
+                            <li>Кардиология;</li>
+                            <li>Терапия;</li>
+                            <li>Гинекология;</li>
+                            <li>Урология;</li>
+                            <li>Интервенциялық кардиология;</li>
+                            <li>Нейрохирургия.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-images">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/assets/img1.webp" class="rounded" alt="Image1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img2.webp" class="rounded" alt="Image2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img3.webp" class="rounded" alt="Image3">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacts">
+
+        <div class="form-click">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <p class="col-md-8">Телефон нөміріңізді қалдырыңыз, біз сізге ыңғайлы уақытта хабарласамыз..
+                        Біздің мамандар Сізге кәсіби медициналық көмек алуға көмектесуге дайын.</p>
+                    <button type="button" class="btn btn-warning col-md-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        Қоңырауға тапсырыс беру
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts-info">
+            <div class="container">
+                <h2>Contacts</h2>
+                <div class="row justify-content-between contacts-info-container">
+                    <div class="contacts-left col-md-6">
+                        <h3>
+                            "Darina Ғылыми-практикалық медицина орталығы" АҚ
+                        </h3>
+                        <p>Біздің мекен-жайымыз:</p>
+                        <div class="flex">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://go.2gis.com/b4xo7" target="_blank">Астана қаласы, Абылайхан даңғылы, 42</a>
+                        </div>
+                        <p>Call-орталық:</p>
+                        <div class="flex">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+7 (7172) 77-77-77" target="_blank">+7 (7172) 77-77-77</a>
+                        </div>
+
+                        <div class="row social">
+                            <div class="social-container col-md-1">
+                                <a href="#">
+                                    <i class="fab fa-instagram social-icon"></i>
+                                </a>
+                            </div>
+                            <div class="social-container col-md-1">
+                                <a href="#">
+                                    <i class="fab fa-telegram social-icon"></i>
+                                </a>
+                            </div>
+                            <div class="social-container col-md-1">
+                                <a href="#">
+                                    <i class="fab fa-facebook social-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-right col-md-6">
+                        <iframe id="map_932948254" frameborder="0" width="100%" height="400px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_932948254", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzcxLjQ5NTA3OCw1MS4xNDkwMDhdfSwiaWQiOjIxMTN9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo1MS4xNDgzOTQxNzYxMTU1OTUsImxvbiI6NzEuNDkzOTcwMTU1NzE1OTYsInpvb20iOjE3fSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="footer-left col-md-6">
+                <img src="/assets/logo.jpg" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="https://go.2gis.com/b4xo7" target="_blank">Астана қаласы, Абылайхан даңғылы, 42</a></li>
+                    <li><a href="tel:+7 (7172) 77-77-77" target="_blank">+7 (7172) 77-77-77</a></li>
+                </ul>
+                <p>© 2024 Darina Clinic. Барлық құқықтар сақталған.</p>
+            </div>
+            <div class="footer-right col-md-6">
+                <nav class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="index-kz.html">Басты</a>
+                        </li>
+                        <li>
+                            <a href="about-us-kz.html">Орталық туралы</a>
+                        </li>
+                        <li>
+                            <a href="contacts-kz.html">Контактілер</a>
+                        </li>
+                        <li>
+                            <a href="/departments/gynecology.html">Гинекологиялық бөлім</a>
+                        </li>
+                        <li>
+                            <a href="/departments/microbiological_laboratory.html">Микробиологиялық зертхана</a>
+                        </li>
+                        <li>
+                            <a href="#">Құпиялылық саясаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Қолдану ережелері</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Қоңырауға тапсырыс беру</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Пішінді толтырыңыз, біз сізге хабарласамыз.</p>
+
+                <form class="contact-form">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="floatingPhone" maxlength="12" placeholder="+7(777)7777777">
+                        <label for="floatingPhone">Телефон нөмірі</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingComments" style="height: 100px"></textarea>
+                        <label for="floatingComments">Пікір</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Маған мүмкіндігінше тезірек қоңырау шалыңыз</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Жіберу</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Болдырмау</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Сәтті жіберілді</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Біз сіздің сұрауыңызды алдық және сізбен жақын арада хабарласамыз.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

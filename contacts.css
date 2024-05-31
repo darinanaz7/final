@@ -1,0 +1,64 @@
+.contact-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info-item.first {
+    animation: fly1 4s infinite;
+}
+
+.contact-info-item.second {
+    animation: fly2 4s infinite;
+}
+
+.contact-info-item.third {
+    animation: fly1 4s infinite;
+}
+
+.contact-info-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+@keyframes fly2 {
+   0% {
+       transform: translateY(10px);
+   }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fly1 {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fly3 {
+    0% {
+        transform: translateY(10px);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}

@@ -1,0 +1,61 @@
+.carousel-info-description {
+    top: 50%;
+}
+
+.carousel-info-description p {
+    width: 60%;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.carousel-info-container {
+    background-image: url('../assets/microbiology_main.png');
+}
+
+ul, ol {
+    margin-bottom: 30px;
+}
+
+ul li, ol li {
+    margin-top: 10px;
+}
+
+ul.underlined {
+    list-style-type: circle;
+    text-decoration: underline;
+}
+
+.lh {
+    line-height: 2;
+}
+
+.imgs {
+    margin-top: 50px;
+}
+
+
+.imgs .row {
+    margin-top: 40px;
+}
+
+.strengths {
+    margin-top: 50px;
+}
+
+.strengths ol {
+    margin-top: 30px;
+}
+
+.contact-info a {
+    font-weight: normal;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,75 @@
+p {
+    letter-spacing: 0.7px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+main ul li {
+    letter-spacing: 0.7px;
+    margin-top: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+aside h5 {
+    text-align: center;
+}
+
+aside>div {
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.flex {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+aside a {
+    color: black;
+}
+
+aside a {
+    color: black;
+}
+
+.flex:hover a {
+    color: #f1c40f; /* Меняет цвет ссылки при наведении на контейнер */
+}
+
+.flex:hover i {
+    color: #f1c40f; /* Меняет цвет иконки при наведении на контейнер */
+}
+
+.flex i {
+    transition: color 0.1s;
+}
+
+.flex a {
+    transition: color 0.1s;
+}
+
+.contact-button {
+    transition: color 0.1s;
+}
+
+.contact-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contact-button:hover {
+    color: #f1c40f;
+}
