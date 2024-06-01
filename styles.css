@@ -423,3 +423,26 @@
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
 }
+
+#scrollToTopBtn {
+    background-color: #fff;
+    border-radius: 50%;
+    /*color: white;*/
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease;
+    border: 1px solid black;
+}
+
+#scrollToTopBtn.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
